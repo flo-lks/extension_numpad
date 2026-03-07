@@ -15,6 +15,7 @@ the connections were not recognized because of a wrong footprint I assigned to t
 Lastly, I connected everything and played around a little with the design of the board.
 
 ##Images
+
 <img width="3507" height="2480" alt="Schematic" src="https://github.com/user-attachments/assets/121788f9-64e7-46aa-8edc-c092676e9bbe" />
 <img width="559" height="670" alt="PCB" src="https://github.com/user-attachments/assets/76930dbe-6f32-4ee0-83b8-945324c68a5a" />
 <img width="449" height="548" alt="3D model" src="https://github.com/user-attachments/assets/0e06cd6f-024f-47f3-93a5-eb91766eda14" />
