@@ -28,6 +28,6 @@ I started by modeling the plate with the help of the online designer linked in t
 A few things are still missing, such as a cutout for the USB-C port and the angled sides I still want to add.
 
 ## Images
-<img width="1920" height="1032" alt="Case-Model" src="https://github.com/user-attachments/assets/21c38091-080b-4f2f-8dc8-9ab2ad9cf2dd" />
+<img width="1920" height="1032" alt="Case-Model" src="https://github.com/user-attachments/assets/7c8010bf-83ad-4f4b-b692-cbaf995e7bd7" />
 
 **Time spent: 5h - 6h**
