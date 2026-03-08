@@ -24,7 +24,7 @@ Lastly, I connected everything and played around a little with the design of the
 # 08.03.2026: Case Design
 ## What I did?
 I decided to design my case as a sandwich-mount type, and I also wanted it to be slightly angled. The hardest part was, once again, getting comfortable with Fusion 360. I have used Blender before, but in my opinion, Fusion is completely different, and I found it quite hard to get into. However, nothing a few YouTube tutorials couldn't fix.
-I started by modeling the plate with the help of the online designer linked in the [resources}(https://blueprint.hackclub.com/hackpad/resources]. I added a hole for the rotary encoder and extended it to fit the entire PCB. The base was the hardest part since I had to figure out a few things, like how to add an angle, but I eventually managed to do it.
+I started by modeling the plate with the help of the online designer linked in the [resources](https://blueprint.hackclub.com/hackpad/resources]. I added a hole for the rotary encoder and extended it to fit the entire PCB. The base was the hardest part since I had to figure out a few things, like how to add an angle, but I eventually managed to do it.
 A few things are still missing, such as a cutout for the USB-C port and the angled sides I still want to add.
 
 ## Images
