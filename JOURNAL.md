@@ -40,5 +40,6 @@ Most challenging were definitely the screw holes. I found it very hard to get th
 ## Images
 <img width="1920" height="1032" alt="Case-HomePos" src="https://github.com/user-attachments/assets/2bde99bd-c2a9-4525-a9fc-62bfa2c9c39a" />
 <img width="1920" height="1032" alt="Case-Back" src="https://github.com/user-attachments/assets/cc2d415c-17ae-4fd2-a622-4be96b1e30af" />
+<img width="1920" height="1032" alt="Numpad-Assembled" src="https://github.com/user-attachments/assets/18c9e058-c881-4625-bc6e-571af0a0322b" />
 
 **Time spent: 4h**
