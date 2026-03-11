@@ -31,3 +31,14 @@ A few things are still missing, such as a cutout for the USB-C port and the angl
 <img width="1920" height="1032" alt="Case-Model" src="https://github.com/user-attachments/assets/7c8010bf-83ad-4f4b-b692-cbaf995e7bd7" />
 
 **Time spent: 5h - 6h**
+
+# 10.03.2026: Case Design
+## What I did?
+I finished the 3D model of the case. I added holes for the screws and the heatset insterts as well as a cutout for the USB-C port. I also realized that the rotary encoder wasn't going to fit in the hole I intended for it, so I had to make a new cutout for it.
+Most challenging were definitely the screw holes. I found it very hard to get the measurements down correctly, especially because of the angled top part. I made a lot of little mistakes, which caused a lot of back and forth.
+
+## Images
+<img width="1920" height="1032" alt="Case-HomePos" src="https://github.com/user-attachments/assets/2bde99bd-c2a9-4525-a9fc-62bfa2c9c39a" />
+<img width="1920" height="1032" alt="Case-Back" src="https://github.com/user-attachments/assets/cc2d415c-17ae-4fd2-a622-4be96b1e30af" />
+
+**Time spent: 4h**
