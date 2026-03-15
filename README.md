@@ -23,12 +23,7 @@ I use a sandwich-mount case design, which consists of a base and a top part. It 
 ## Firmware
 This numpad uses the [QMK](https://qmk.fm/) firmware, with a basic numpad layout.
 
-|   |   |   |
-|---|---|---|
-| 7 | 8 | 9 | / |
-| 4 | 5 | 6 | * |
-| 1 | 2 | 3 | - |
-| 0 | . | Enter | + |
+<img src=assets/Keymap-Layout.png alt="Keymap-Layout" width="500"/>
 
 ## BOM
 - 1x 3D Printed Case (1x Base, 1x Top)
