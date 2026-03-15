@@ -3,7 +3,7 @@
 Future additions could incloud a way to switch between different keymaps to use it as real macro pad.
 
 ## Render
-<img src=assets/numpad_render.png alt="Render of the numpad" width="500"/>
+<img src=assets/numpad_render.jpg alt="Render of the numpad" width="500"/>
 
 ## PCB
 ### Schematic
@@ -22,11 +22,13 @@ I use a sandwich-mount case design, which consists of a base and a top part. It 
 
 ## Firmware
 This numpad uses the [QMK](https://qmk.fm/) firmware, with a basic numpad layout.
+
+|   |   |   |
+|---|---|---|
 | 7 | 8 | 9 | / |
 | 4 | 5 | 6 | * |
 | 1 | 2 | 3 | - |
-| 0 | . | Ent | + |
-
+| 0 | . | Enter | + |
 
 ## BOM
 - 1x 3D Printed Case (1x Base, 1x Top)
