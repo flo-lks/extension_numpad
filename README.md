@@ -17,19 +17,16 @@ Future additions could incloud a way to switch between different keymaps to use 
 
 ## Case
 I use a sandwich-mount case design, which consists of a base and a top part. It is angled at 7 degrees for a more comfortable typing experience. The switches clip into the top plate which is screwed to the base with help of the heatset inserts.
+
 <img src=assets/Case.png alt="Render of the case" width="500"/>
 
 ## Firmware
 This numpad uses the [QMK](https://qmk.fm/) firmware, with a basic numpad layout.
-┌───┬───┬───┬───┐
-│ 7 │ 8 │ 9 │ / │
-├───┼───┼───┼───┤
-│ 4 │ 5 │ 6 │ * │
-├───┼───┼───┼───┤
-│ 1 │ 2 │ 3 │ - │
-├───┼───┼───┼───┤
-│ 0 │ . │Ent│ + │
-└───┴───┴───┴───┘
+| 7 | 8 | 9 | / |
+| 4 | 5 | 6 | * |
+| 1 | 2 | 3 | - |
+| 0 | . | Ent | + |
+
 
 ## BOM
 - 1x 3D Printed Case (1x Base, 1x Top)
