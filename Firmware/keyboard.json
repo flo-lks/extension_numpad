@@ -8,11 +8,21 @@
         "bootmagic": true,
         "extrakey": true,
         "mousekey": true,
-        "nkro": true
+        "nkro": true,
+        "encoder": true
     },
     "matrix_pins": {
-        "cols": ["GP3", "GP4", "GP2", "GP1"], //add col 5 for rotary encoder
+        "cols": ["GP3", "GP4", "GP2", "GP1", "GP26"],
         "rows": ["GP27", "GP28", "GP29", "GP6"]
+    },
+    "encoder":{
+        "rotary":[
+            {
+                "pin_a": "GP7",
+                "pin_b": "GP21",
+                "resolution": 4
+            }
+        ]
     },
     "processor": "RP2040",
     "url": "",
@@ -29,6 +39,7 @@
                 {"matrix": [0, 1], "x": 1, "y": 0},
                 {"matrix": [0, 2], "x": 2, "y": 0},
                 {"matrix": [0, 3], "x": 3, "y": 0},
+                {"matrix": [0, 4], "x": 4, "y": 0},
                 //row 1
                 {"matrix": [1, 0], "x": 0, "y": 1},
                 {"matrix": [1, 1], "x": 1, "y": 1},

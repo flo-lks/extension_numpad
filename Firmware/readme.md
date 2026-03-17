@@ -1,12 +1,12 @@
 # flo_4x4_numpad
 
-![flo_4x4_numpad](imgur.com image replace me!)
+![flo_4x4_numpad](https://imgur.com/a/27nFmwC)
 
-*A short description of the keyboard/project*
+4x4 numpad to connect to your PC if you don't have one. The rotary encoder can be used to control the PC volume.
 
 * Keyboard Maintainer: [Flo](https://github.com/flo-lks)
-* Hardware Supported: *The PCBs, controllers supported*
-* Hardware Availability: *Links to where you can find this hardware*
+* Hardware Supported: Seeed Studio RP2040
+* Hardware Availability: [Seeed Studio RP2040](https://wiki.seeedstudio.com/XIAO-RP2040/)
 
 Make example for this keyboard (after setting up your build environment):
 
