@@ -43,3 +43,14 @@ Most challenging were definitely the screw holes. I found it very hard to get th
 <img width="1920" height="1032" alt="Numpad-Assembled" src="https://github.com/user-attachments/assets/18c9e058-c881-4625-bc6e-571af0a0322b" />
 
 **Time spent: 4h**
+
+# 10.03.2026 - 17.03.2026
+## What I did?
+I didn't have a lot of time to write a journal entry every time I worked on the project, and most of the time I did only small changes.
+I added a few things to the case, like a dial for the rotary encoder or the keycaps, to make a nice render. But mainly I worked on the firmware. I use QMK because it was said that it is the easiest for beginners. I still found it hard to really get into the whole QMK system. But with the help of a few YouTube tutorials, I at least managed to set up the files correctly, and the implementation of the switches was easy. The rotary encoder, on the other hand, was a problem. I couldn't find anything that explained well how to implement it. That's when I turned to AI, and with the help of Gemini, I think I figured it out, but I am still not quite sure how it works (at least it complied right, so surely it will work).
+With that done, I submitted the project today and am now waiting for the review.
+
+## Images
+<img src="assets/numpad_render.jpg" alt="Numpad-Render" width="500"/>
+
+**Time spent: 10h**
