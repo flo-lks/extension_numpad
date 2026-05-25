@@ -6,7 +6,7 @@ created_at: "06.03.2026"
 ---
 
 # 06.03.2026: Getting started
-## What I did?
+## What did I do?
 I began with setting up KiCad and importing necessary libraries (HackClub "care package", ScottoKeebs', Rotary-Encoder librarie).
 With the help of some YouTube videos (mainly from Joe Scott), I learned about KiCad and started with the project.
 After a bit of trial and error, I got the Schematics down and made my way to the PCB Editor. At first this was a bit tricky, but I got the base layout done fairly quickly.
@@ -22,7 +22,7 @@ Lastly, I connected everything and played around a little with the design of the
 **Time spent: 4h - 5h**
 
 # 08.03.2026: Case Design
-## What I did?
+## What did I do?
 I decided to design my case as a sandwich-mount type, and I also wanted it to be slightly angled. The hardest part was, once again, getting comfortable with Fusion 360. I have used Blender before, but in my opinion, Fusion is completely different, and I found it quite hard to get into. However, nothing a few YouTube tutorials couldn't fix.
 I started by modeling the plate with the help of the online designer linked in the [resources](https://blueprint.hackclub.com/hackpad/resources). I added a hole for the rotary encoder and extended it to fit the entire PCB. The base was the hardest part since I had to figure out a few things, like how to add an angle, but I eventually managed to do it.
 A few things are still missing, such as a cutout for the USB-C port and the angled sides I still want to add.
@@ -33,7 +33,7 @@ A few things are still missing, such as a cutout for the USB-C port and the angl
 **Time spent: 5h - 6h**
 
 # 10.03.2026: Case Design
-## What I did?
+## What did I do?
 I finished the 3D model of the case. I added holes for the screws and the heatset insterts as well as a cutout for the USB-C port. I also realized that the rotary encoder wasn't going to fit in the hole I intended for it, so I had to make a new cutout for it.
 Most challenging were definitely the screw holes. I found it very hard to get the measurements down correctly, especially because of the angled top part. I made a lot of little mistakes, which caused a lot of back and forth.
 
@@ -45,7 +45,7 @@ Most challenging were definitely the screw holes. I found it very hard to get th
 **Time spent: 4h**
 
 # 10.03.2026 - 17.03.2026
-## What I did?
+## What did I do?
 I didn't have a lot of time to write a journal entry every time I worked on the project, and most of the time I did only small changes.
 I added a few things to the case, like a dial for the rotary encoder or the keycaps, to make a nice render. But mainly I worked on the firmware. I use QMK because it was said that it is the easiest for beginners. I still found it hard to really get into the whole QMK system. But with the help of a few YouTube tutorials, I at least managed to set up the files correctly, and the implementation of the switches was easy. The rotary encoder, on the other hand, was a problem. I couldn't find anything that explained well how to implement it. That's when I turned to AI, and with the help of Gemini, I think I figured it out, but I am still not quite sure how it works (at least it complied right, so surely it will work).
 With that done, I submitted the project today and am now waiting for the review.
@@ -54,3 +54,61 @@ With that done, I submitted the project today and am now waiting for the review.
 <img src="assets/numpad_render.jpg" alt="Numpad-Render" width="500"/>
 
 **Time spent: 10h**
+
+# 23.05.2026: Soldered the PCB and tested Firmware
+## What did I do?
+Today the rest of the parts I have been waiting for finally arrived, and I could start assembling.
+
+### **Soldering**
+
+First I soldered on the diodes, then the PR2024, the rotary encoder, and lastly the switches.
+I have soldered a few times before, so it went pretty smoothly. After the first few pins were soldered, the rest was done in no time.
+
+<img src="assets/soldering.jpg" alt="PCB-soldering" width="500"/>
+
+The only major problem I encountered was the cutout for the USB-C connector. Somehow the cutout in the case was too high for the USB connector.
+
+<img src="assets/usb-cutout.jpg" alt="usb-cutout" width="500"/>
+
+### **Firmware test**
+After I finished the soldering, I tried flashing my firmware.
+
+First I had to figure out how to flash it but found help on the seeedstudio wiki. After I put it into bootloader mode and copied the .uf2 file into the folder, I tried typing and opened a keyboard tester website.
+
+<img src="assets/numpad-connected.jpg" alt="Numpad-Connected" width="500"/>
+
+
+To my surprise, all keys worked, but not quite how they should. At least the four keys for the operations (/, *, -, +), the enter key, and the mute function of the encoder worked, but all other keys were doing something else.
+
+For example:
+
+- Key 0: insert
+- Key 2: arrow down
+- Key 3: PgDwn
+
+I will look into the firmware again and fix it, and if it all works, I will go on to the case and fix the USB cutout as well as insert the heatset inserts.
+
+**Time spent: 5h**
+
+# 26.05.2026: Firmware and Case Fixes
+## What did I do?
+
+### **Case**
+To fix the problem with the USB-C port, I sanded down the cutout so a cable now fits in without issues.
+After that, I installed heatset inserts and cut two screws down to 8 mm so they fit into the bottom two mounting holes.
+
+<img src="assets/usb-cutout-fixed.jpg" alt="USB-cutout-fixed" width="500"/>
+
+### **Firmware**
+**Numlock Toggle:**
+A numpad uses different key mappings than the normal number row, since the keys also serve as arrow keys and other functions. The solution was to add a way to activate and deactivate Numlock.
+
+I tried several approaches, including a key combination, but that caused unwanted inputs while toggling Numlock. Instead, I implemented a long‑press detection on the mute key: if the mute key is held for longer than 300 ms, Numlock toggles.
+
+**Volume Control:**
+The issue with volume control was caused by incorrect pin configurations in keyboard.json. The encoder pins A and B were assigned incorrectly. After correcting the pin assignments, the volume control now works as expected.
+
+**Now my intended functions for a Numpad all work, and it is ready to be shipped**
+<img src="assets/numpad-finished.jpg" alt="Numpad-finished" width="500"/>
+
+**Time spent: 3h**
