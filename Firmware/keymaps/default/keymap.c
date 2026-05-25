@@ -4,17 +4,6 @@
 #include QMK_KEYBOARD_H
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-    /*
-     * ┌───┬───┬───┬───┬───┐
-     * │ 7 │ 8 │ 9 │ / │ R │
-     * ├───┼───┼───┼───┼───┘
-     * │ 4 │ 5 │ 6 │ * │
-     * ├───┼───┼───┼───┤
-     * │ 1 │ 2 │ 3 │ - │
-     * ├───┼───┼───┼───┤
-     * │ 0 │ . │Ent│ + │
-     * └───┴───┴───┴───┘
-     */
     [0] = LAYOUT_flo_4x4(
         KC_P7,   KC_P8,   KC_P9,   KC_PSLS, KC_MUTE,
         KC_P4,   KC_P5,   KC_P6,   KC_PAST,
@@ -23,8 +12,41 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     )
 };
 
-#if defined(ENCODER_MAP_ENABLE)
-const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][2] = {
-    [0] = { ENCODER_CCW_CW(KC_VOLD, KC_VOLU) },  // Layer 0: CCW=Voldown, CW=Volup
-};
-#endif
+static uint16_t mute_timer = 0;
+static bool mute_interrupted = false;
+
+bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+    if (keycode == KC_MUTE) {
+        if (record->event.pressed) {
+            mute_timer       = timer_read();
+            mute_interrupted = false;
+            return false;
+        } else {
+            uint16_t held_ms = timer_elapsed(mute_timer);
+
+            if (!mute_interrupted && held_ms >= 300) {
+                tap_code(KC_NUM_LOCK);
+            } else {
+                tap_code(KC_MUTE);
+            }
+            return false;
+        }
+    }
+
+    if (record->event.pressed) {
+        mute_interrupted = true;
+    }
+
+    return true;
+}
+
+bool encoder_update_user(uint8_t index, bool clockwise) {
+    if (index == 0) {
+        if (clockwise) {
+            tap_code(KC_VOLD);
+        } else {
+            tap_code(KC_VOLU);
+        }
+    }
+    return false;
+}

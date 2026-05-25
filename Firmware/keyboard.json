@@ -15,11 +15,12 @@
         "cols": ["GP3", "GP4", "GP2", "GP1", "GP26"],
         "rows": ["GP27", "GP28", "GP29", "GP6"]
     },
-    "encoder":{
-        "rotary":[
+    "encoder": {
+        "enable": true,
+        "rotary": [
             {
                 "pin_a": "GP7",
-                "pin_b": "GP21",
+                "pin_b": "GP0",
                 "resolution": 4
             }
         ]
