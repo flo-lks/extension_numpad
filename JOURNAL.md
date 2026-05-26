@@ -95,7 +95,7 @@ I will look into the firmware again and fix it, and if it all works, I will go o
 
 ### **Case**
 To fix the problem with the USB-C port, I sanded down the cutout so a cable now fits in without issues.
-After that, I installed heatset inserts and cut two screws down to 8 mm so they fit into the bottom two mounting holes.
+After that, I installed heatset inserts and cut two screws down to 8 mm so they fit into the bottom two mounting holes.
 
 <img src="assets/usb-cutout-fixed.jpg" alt="USB-cutout-fixed" width="500"/>
 
@@ -103,12 +103,12 @@ After that, I installed heatset inserts and cut two screws down to 8 mm so the
 **Numlock Toggle:**
 A numpad uses different key mappings than the normal number row, since the keys also serve as arrow keys and other functions. The solution was to add a way to activate and deactivate Numlock.
 
-I tried several approaches, including a key combination, but that caused unwanted inputs while toggling Numlock. Instead, I implemented a long‑press detection on the mute key: if the mute key is held for longer than 300 ms, Numlock toggles.
+I tried several approaches, including a key combination, but that caused unwanted inputs while toggling Numlock. Instead, I implemented a long-press detection on the mute key: if the mute key is held for longer than 300 ms, Numlock toggles.
 
 **Volume Control:**
 The issue with volume control was caused by incorrect pin configurations in keyboard.json. The encoder pins A and B were assigned incorrectly. After correcting the pin assignments, the volume control now works as expected.
 
 **Now my intended functions for a Numpad all work, and it is ready to be shipped**
-<img src="assets/numpad-finished.jpg" alt="Numpad-finished" width="500"/>
+<img src="assets/numpad-final.jpg" alt="final picture of numpad" width="500"/>
 
 **Time spent: 3h**

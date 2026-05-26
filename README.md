@@ -2,8 +2,9 @@
 4x4 numpad to connect to your PC if you don't have one. The rotary encoder can be used to control the PC volume.
 Future additions could include a way to switch between different keymaps to use it as a real macro pad.
 
-## Render
-<img src=assets/numpad_render.jpg alt="Render of the numpad" width="500"/>
+<img src=assets/numpad-final.jpg alt="final picture of numpad" width="500"/>
+
+[demo](https://youtu.be/KasFj6y4_b8)
 
 ## PCB
 ### Schematic
